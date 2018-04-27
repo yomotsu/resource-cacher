@@ -1,0 +1,38 @@
+{
+  "name": "resouce-cache",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "jsnext:main": "dist/resouce-cache.module.js",
+  "module": "dist/resouce-cache.module.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yomotsu/resouce-cache.git"
+  },
+  "author": "Yomotsu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yomotsu/resouce-cache/issues"
+  },
+  "homepage": "https://github.com/yomotsu/resouce-cache#readme",
+  "scripts": {
+    "dev": "npm run watch",
+    "watch": "rollup --config --watch",
+    "build": "rollup --config",
+    "release": "rollup --config && uglifyjs dist/resouce-cache.js -cm --preamble \"/*!\n * resouce-cache\n * https://github.com/yomotsu/resouce-cache\n * (c) 2018 @yomotsu\n * Released under the MIT License.\n */\" > dist/resouce-cache.min.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "image",
+    "img",
+    "cache"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "1.6.1",
+    "rollup": "^0.58.1",
+    "rollup-plugin-babel": "3.0.3",
+    "rollup-watch": "^4.3.1",
+    "uglify-js": "^3.3.21"
+  }
+}
