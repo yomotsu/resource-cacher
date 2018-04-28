@@ -1,25 +1,25 @@
 {
-  "name": "resouce-cache",
+  "name": "resource-cache",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
-  "jsnext:main": "dist/resouce-cache.module.js",
-  "module": "dist/resouce-cache.module.js",
+  "jsnext:main": "dist/resource-cache.module.js",
+  "module": "dist/resource-cache.module.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yomotsu/resouce-cache.git"
+    "url": "git+https://github.com/yomotsu/resource-cache.git"
   },
   "author": "Yomotsu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yomotsu/resouce-cache/issues"
+    "url": "https://github.com/yomotsu/resource-cache/issues"
   },
-  "homepage": "https://github.com/yomotsu/resouce-cache#readme",
+  "homepage": "https://github.com/yomotsu/resource-cache#readme",
   "scripts": {
     "dev": "npm run watch",
     "watch": "rollup --config --watch",
     "build": "rollup --config",
-    "release": "rollup --config && uglifyjs dist/resouce-cache.js -cm --preamble \"/*!\n * resouce-cache\n * https://github.com/yomotsu/resouce-cache\n * (c) 2018 @yomotsu\n * Released under the MIT License.\n */\" > dist/resouce-cache.min.js",
+    "release": "rollup --config && uglifyjs dist/resource-cache.js -cm --preamble \"/*!\n * resource-cache\n * https://github.com/yomotsu/resource-cache\n * (c) 2018 @yomotsu\n * Released under the MIT License.\n */\" > dist/resource-cache.min.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

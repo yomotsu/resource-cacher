@@ -1,8 +1,8 @@
 import babel from 'rollup-plugin-babel'
 
 const license = `/*!
- * resouce-cache
- * https://github.com/yomotsu/resouce-cache
+ * resource-cache
+ * https://github.com/yomotsu/resource-cache
  * (c) 2018 @yomotsu
  * Released under the MIT License.
  */`
@@ -13,13 +13,13 @@ export default {
 		{
 			format: 'umd',
 			name: 'resouceCache',
-			file: 'dist/resouce-cache.js',
+			file: 'dist/resource-cache.js',
 			indent: '\t',
 			banner: license
 		},
 		{
 			format: 'es',
-			file: 'dist/resouce-cache.module.js',
+			file: 'dist/resource-cache.module.js',
 			indent: '\t',
 			banner: license
 		}
