@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" href="">
+</head>
+<body>
+
+<script src="../dist/resource-cacher.js"></script>
+<script>
+// load with Ajax
+resourceCacher.loadResource( './img.png', resourceCacher.ONE_MINUTE ).then( ( blobUrl ) => {
+
+	console.log( blobUrl );
+	const img = new Image();
+	img.src = blobUrl;
+	document.body.appendChild( img );
+
+} );
+
+
+
+setTimeout( () => {
+
+	// load from memory
+	resourceCacher.loadResource( './img.png', resourceCacher.ONE_SECOND ).then( ( blobUrl ) => {
+
+		console.log( blobUrl );
+		const img = new Image();
+		img.src = blobUrl;
+		document.body.appendChild( img );
+
+	} );
+
+}, 3000 );
+
+
+
+setTimeout( () => {
+
+	// load with Ajax
+	resourceCacher.loadResource( './img.png', resourceCacher.ONE_MINUTE ).then( ( blobUrl ) => {
+
+		console.log( blobUrl );
+		const img = new Image();
+		img.src = blobUrl;
+		document.body.appendChild( img );
+
+	} );
+
+}, 60 * 1000 + 1000 );
+</script>
+
+</body>
+</html>
